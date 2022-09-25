@@ -104,6 +104,16 @@
 
 .cv_about-content-info {
     display: flex;
+    justify-content: space-between;
+}
+
+.cv_about-content-info .info-left {
+    /* padding: 0 16px 0 0; */
+    width: 48%;
+}
+
+.cv_about-content-info .info-right {
+    /* padding: 0 16px 0 0; */
 }
 
 .cv__about-content ul li {

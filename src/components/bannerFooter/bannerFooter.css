@@ -1,60 +1,40 @@
-.cv__banner {
+.cv__banner-footer {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-
-    padding: 2rem;
-    margin: 4rem;
-    border-radius: 1rem;
-    background: var(--gradient-bar)
+    justify-content: center;
+    height: 200px;
+    margin: 69px 0;
 }
 
 .cv__banner-content {
-    display: flex;
-    flex-direction: column;
-
-    text-align: left;
-    color: #fff;
+    padding: 0 19px;
 }
 
-.cv__banner-content p {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 30px;
-    font-weight: 500;
+.cv__banner-content.react {
+    padding: 0 19px;
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-.cv__banner-content h3 {
-    font-family: var(--font-family);
-    font-size: 24px;
-    line-height: 45px;
-    font-weight: 800;
+
+
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-.cv__banner-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin-left: 2rem;
+.cv__banner-content img {
+    width: 100px;
 }
 
-.cv__banner-btn button {
-    background: #000;
-    color: #fff;
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-    padding: 0.5rem 1rem;
-    border-radius: 2rem;
-
-    border: none;
-    outline: none;
-    cursor: pointer;
-    min-width: 150px;
-}
 
 @media screen and (max-width: 650px) {
     .cv__banner {

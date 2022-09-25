@@ -8,13 +8,13 @@ const Contact = () => (
     <div className="cv__contact-map">
       <iframe
         title="home"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.21505309582!2d105.5811931!3d10.4837063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a6f20b1ec6bf9%3A0x32f45932592ca69e!2zTmjDoCBLaMOhY2ggTWluaCBEdXkgKFRyYW5nIHRyw60gdGnhu4djIGPGsOG7m2kp!5e0!3m2!1svi!2s!4v1664074688207!5m2!1svi!2s"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.2141133483183!2d105.57899391413663!3d10.48378046739533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310a6f20b1ec6bf9%3A0x32f45932592ca69e!2zTmjDoCBLaMOhY2ggTWluaCBEdXkgKFRyYW5nIHRyw60gdGnhu4djIGPGsOG7m2kp!5e0!3m2!1svi!2s!4v1664116959286!5m2!1svi!2s"
         width="100%"
-        height="470"
+        height="510"
         style={{ border: '0' }}
         allowFullScreen=""
         loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
+        referrerPolicy="no-referrer-when-downgrade"
       />
     </div>
     <div className="cv__contact-info">

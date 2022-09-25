@@ -58,14 +58,26 @@
 .cv__navbar-sign button {
     height: 40px;
     border: 1px solid white;
-    padding: 9px 9px;
+    padding: 0px 19px;
     border-radius: 3px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     background-color: transparent;
     color: white;
-    border-right: none;
     cursor: pointer;
+}
+
+.cv__navbar-sign .btn-light {
+    border-right: none;
+    border-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.cv__navbar-sign .btn-dark {
+    border-radius: 3px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
 }
 
 .cv__navbar-sign button:hover {

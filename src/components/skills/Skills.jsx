@@ -55,8 +55,8 @@ const Skills = () => (
       <span className="gradient__text">Skills</span>
     </div>
     <div className="cv__skill-item section__padding">
-      {skills.map((item) => (
-        <div className="cv__skill-content">
+      {skills.map((item, index) => (
+        <div key={index} className="cv__skill-content">
           <div className="cv__skill-img">
             <img src={item.img} alt={item.title} />
           </div>

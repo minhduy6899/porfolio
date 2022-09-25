@@ -1,16 +1,15 @@
 import React from 'react';
-import gpt3Logo from '../../logo.svg';
 import './footer.css';
 
 const Footer = () => (
   <div className="cv__footer section__padding" id="footer">
     <section></section>
-    <footer class="footer-distributed">
-      <div class="footer-left">
+    <footer className="footer-distributed">
+      <div className="footer-left">
         <h3>Minh Duy Nguyen</h3>
 
-        <p class="footer-links">
-          <a href="/#" class="link-1">
+        <p className="footer-links">
+          <a href="/#" className="link-1">
             Home
           </a>
 
@@ -23,35 +22,35 @@ const Footer = () => (
           <a href="#contact">Contact</a>
         </p>
 
-        <p class="footer-company-name">Minh Duy © 2022</p>
+        <p className="footer-company-name">Minh Duy © 2022</p>
       </div>
 
-      <div class="footer-center">
+      <div className="footer-center">
         <div>
-          <i class="fa fa-map-marker"></i>
+          <i className="fa fa-map-marker"></i>
           <p>
             <span>339A, Nguyen Huu Kien Street, </span> Cao Lanh City
           </p>
         </div>
 
         <div>
-          <i class="fa fa-phone"></i>
+          <i className="fa fa-phone"></i>
           <p>0939.993.486</p>
         </div>
 
         <div>
-          <i class="fa fa-envelope"></i>
+          <i className="fa fa-envelope"></i>
           <p>minhduy140799@gmail.com</p>
         </div>
       </div>
 
-      <div class="footer-right">
-        <p class="footer-company-about">
+      <div className="footer-right">
+        <p className="footer-company-about">
           <span>Pledge </span>I pledge that I will make efforts and always
           improve my self to work better.
         </p>
 
-        <div class="footer-icons">
+        <div className="footer-icons">
           <a
             href="https://www.facebook.com/duy.minh.9693001/"
             target="_blank"

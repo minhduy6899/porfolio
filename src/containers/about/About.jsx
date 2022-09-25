@@ -18,13 +18,14 @@ const About = () => (
         organization and clients.
       </h4>
       <div className="cv_about-content-info">
-        <ul>
+        <ul className="info-left">
           <li>Name: Nguyen Minh Duy</li>
           <li>Nguyen Huu Kien Street, Cao Lanh City</li>
         </ul>
-        <ul>
+        <ul className="info-right">
           <li>Date of birth: 07/14/1999</li>
-          <li>Phone: 0939993486 Occupation: Web Developer</li>
+          <li>Phone: 0939993486</li>
+          <li>Occupation: Web Developer</li>
         </ul>
       </div>
       <div className="cv_about-content-socials">
