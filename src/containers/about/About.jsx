@@ -36,11 +36,11 @@ const About = () => (
           <i className="fab fa-facebook-square" />
         </a>
         <a
-          href="https://www.instagram.com/ng_uyen_m_inh_d_uy/"
+          href="https://github.com/minhduy6899"
           target="_blank"
           rel="noreferrer"
         >
-          <i className="fab fa-instagram-square" />
+          <i className="fa-brands fa-square-github" />
         </a>
         <a
           href="https://twitter.com/BaDzyNguyen"

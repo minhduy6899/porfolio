@@ -10,8 +10,20 @@
     align-items: center;
 
     margin-right: 2rem;
-    animation: slidein 2s linear 2s;
+    animation: slidein 1s ease-in 2s;
     position: relative;
+}
+
+@keyframes slidein {
+    from {
+        left: -200px;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
 .cv__about-image::before {
@@ -40,18 +52,6 @@
     z-index: 10;
 }
 
-@keyframes slidein {
-    from {
-        left: -600px;
-        opacity: 0;
-    }
-
-    to {
-        left: 0;
-        opacity: 1;
-    }
-}
-
 .cv__about-content {
     position: relative;
     flex: 1;
@@ -59,7 +59,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    animation: slideDown 2s linear 2s;
+    animation: slideDown 1s ease-in 2s;
 }
 
 @keyframes slideDown {

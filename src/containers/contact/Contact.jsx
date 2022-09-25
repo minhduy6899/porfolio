@@ -2,8 +2,8 @@
 import React from 'react';
 import './contact.css';
 
-const Features = () => (
-  <div className="cv__contact section__padding" id="features">
+const Contact = () => (
+  <div className="cv__contact section__padding" id="contact">
     <div className="cv__contact-bg" />
     <div className="cv__contact-map">
       <iframe
@@ -69,4 +69,4 @@ const Features = () => (
   </div>
 );
 
-export default Features;
+export default Contact;

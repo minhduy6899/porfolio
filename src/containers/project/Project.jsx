@@ -6,7 +6,9 @@ import './project.css';
 const Project = () => (
   <div className="cv__project section__padding" id="project">
     <div className="cv__project-heading">
-      <h1 className="gradient__text">Projects</h1>
+      <i className="fa-solid fa-diagram-project" />
+      &nbsp;&nbsp;
+      <span className="gradient__text">Projects</span>
     </div>
     <div className="cv__project-container">
       <div className="cv__project-container_groupB">

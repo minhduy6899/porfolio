@@ -1,3 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+    font-family: Open Sans;
+}
+
+section {
+    width: 100%;
+    display: inline-block;
+    background: #333;
+    height: 50vh;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+    background-image: url('../../assets/work.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .cv__footer {
     display: flex;
     flex-direction: column;
@@ -7,113 +28,193 @@
     background: var(--color-footer);
 }
 
-.cv__footer-heading {
-    width: 100%;
-    text-align: center;
 
-    margin-bottom: 3rem;
-}
-
-.cv__footer-heading h1 {
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 64px;
-    line-height: 75px;
-}
-
-.cv__footer-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 1rem;
-    border: 1px solid #fff;
-    text-align: center;
-
-    margin-bottom: 10rem;
-    cursor: pointer;
-}
-
-.cv__footer-btn p {
-    font-size: 18px;
-    font-family: var(--font-family);
-    line-height: 21px;
-    color: #fff;
-    word-spacing: 2px;
-}
-
-.cv__footer-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-
+.footer-distributed {
+    background: #666;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
     width: 100%;
     text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+
+    background: var(--color-footer);
+    background: radial-gradient(circle at 30% -100%, rgb(4 44 84) 25%, rgb(4 44 84) 85%, rgb(27 120 222) 100%);
 }
 
-.cv__footer-links div {
-    width: 250px;
-    margin: 1rem;
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
 }
 
-.cv__footer-links_logo {
-    display: flex;
-    flex-direction: column;
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 40%;
 }
 
-.cv__footer-links_logo img {
-    width: 118px;
-    height: 30px;
+/* The company logo */
 
-    margin-bottom: 1rem;
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Open Sans', cursive;
+    margin: 0;
 }
 
-.cv__footer-links_logo p {
-    font-family: var(--font-family);
-    font-size: 12px;
-    line-height: 15px;
-    color: #fff;
+.footer-distributed h3 span {
+    color: lightseagreen;
 }
 
-.cv__footer-links_div {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
 }
 
-.cv__footer-links_div h4 {
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    font-weight: 400;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: rgb(97, 97, 97);
     font-size: 14px;
-    line-height: 17px;
-    font-family: var(--font-family);
-    color: #fff;
-
-    margin-bottom: 0.9rem;
+    font-weight: normal;
+    margin: 0;
 }
 
-.cv__footer-links_div p {
-    font-size: 12px;
-    line-height: 15px;
-    font-family: var(--font-family);
-    color: #fff;
+/* Footer Center */
 
-    margin: 0.5rem 0;
-    cursor: pointer;
+.footer-distributed .footer-center {
+    width: 35%;
 }
 
-.cv__footer-copyright {
-    margin-top: 2rem;
+.footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
     text-align: center;
-    width: 100%;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
 }
 
-.cv__footer-copyright p {
-    font-size: 12px;
-    font-family: var(--font-family);
-    line-height: 15px;
-    color: #fff;
+.footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
 }
+
+.footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 400;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+    color: lightseagreen;
+    text-decoration: none;
+    ;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+
+}
+
 
 @media screen and (max-width: 850px) {
     .cv__footer-heading h1 {

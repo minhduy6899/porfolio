@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
-import logo from '../../assets/logoDuy.png';
+import logo from '../../assets/logogmd.png';
 import './navbar.css';
 
 const Navbar = () => {
@@ -17,20 +17,20 @@ const Navbar = () => {
             <a href="#home">Home</a>
           </p>
           <p>
-            <a href="#wgpt3">About Me</a>
+            <a href="#about">About Me</a>
           </p>
           <p>
-            <a href="#about">Skills</a>
+            <a href="#skill">Skills</a>
           </p>
           <p>
-            <a href="#features">Portfolio</a>
+            <a href="#project">Project</a>
           </p>
           <p>
-            <a href="#project">Contact</a>
+            <a href="#contact">Contact</a>
           </p>
         </div>
       </div>
-      <div className="cv__navbar-sign">
+      <div className="cv__navbar-sign disable">
         <button type="button">Search</button>
         <input type="text" placeholder="About me..." />
       </div>
@@ -55,21 +55,21 @@ const Navbar = () => {
                 <a href="#home">Home</a>
               </p>
               <p>
-                <a href="#wgpt3">About me</a>
+                <a href="#about">About Me</a>
               </p>
               <p>
-                <a href="#about">Skills</a>
+                <a href="#skill">Skills</a>
               </p>
               <p>
-                <a href="#features">Portfolio</a>
+                <a href="#project">Project</a>
               </p>
               <p>
-                <a href="#project">Contact</a>
+                <a href="#contact">Contact</a>
               </p>
             </div>
-            <div className="cv__navbar-menu_container-links-sign">
-              <p>Sign in</p>
-              <button type="button">Sign up</button>
+            <div className="cv__navbar-sign cv__navbar-search">
+              <button type="button">Search</button>
+              <input type="text" placeholder="About me..." />
             </div>
           </div>
         )}

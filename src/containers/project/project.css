@@ -9,7 +9,14 @@
     margin-bottom: 5rem;
 }
 
-.cv__project-heading h1 {
+.cv__project-heading i {
+    font-size: 34px;
+    line-height: 75px;
+    font-weight: 800;
+    color: white
+}
+
+.cv__project-heading span {
     width: 210px;
     font-size: 34px;
     line-height: 75px;

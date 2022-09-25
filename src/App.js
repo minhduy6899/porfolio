@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Footer, Project, About, Education, Header, Features, Contact } from './containers';
-import { Skills, Banner, Navbar } from './components';
+import { Footer, Project, About, Education, Header, Contact } from './containers';
+import { Skills, Banner, Navbar, BannerFooter } from './components';
 
 import './App.css';
 
@@ -17,7 +17,7 @@ const App = () => (
     <Skills />
     <Project />
     <Contact />
-    <Features />
+    <BannerFooter />
     <Footer />
   </div>
 );

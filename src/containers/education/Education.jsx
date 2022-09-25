@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Feature from '../../components/feature/Feature';
 import './education.css';
 
-const WhatGPT3 = () => (
-  <div className="cv__education section__margin" id="wgpt3">
+const Education = () => (
+  <div className="cv__education section__margin" id="education">
     <div className="cv__education-heading">
       <h1 className="gradient__text">
         <FontAwesomeIcon
@@ -48,4 +48,4 @@ const WhatGPT3 = () => (
   </div>
 );
 
-export default WhatGPT3;
+export default Education;

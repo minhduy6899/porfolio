@@ -15,7 +15,11 @@ const Header = () => (
 
       <div className="cv__header-content__input">
         <button className="btn btn-secondary" type="button">
-          <a href="https://docs.google.com/document/d/1A0xGp3vBqUpArbDBmuN0zWkoDz_Qt6H84e966_kLzDU/edit?usp=sharing">
+          <a
+            href="https://docs.google.com/document/d/1A0xGp3vBqUpArbDBmuN0zWkoDz_Qt6H84e966_kLzDU/edit?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
             DOWNLOAD CV
           </a>
         </button>
@@ -23,7 +27,7 @@ const Header = () => (
     </div>
 
     <div className="cv__header-image">
-      <img src={a1} />
+      <img src={a1} alt="personal" />
     </div>
   </div>
 );

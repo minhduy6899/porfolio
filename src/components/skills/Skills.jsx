@@ -48,7 +48,7 @@ const skills = [
 ];
 
 const Skills = () => (
-  <div className="cv_skills section__padding">
+  <div className="cv_skills section__padding" id="skill">
     <div>
       <i className="fa-solid fa-code" />
       &nbsp;&nbsp;

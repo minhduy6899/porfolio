@@ -15,12 +15,16 @@ const Article = ({ imgUrl, date, text, time }) => (
       <div className="cv__project-button">
         <div className="cv__project-left">
           <button type="button">
-            <a href="/#">Sourcecode</a>
+            <a href="/#" target="_blank" rel="noreferrer">
+              Sourcecode
+            </a>
           </button>
         </div>
         <div className="cv__project-right">
           <button type="button">
-            <a href="/#">Review</a>
+            <a href="/#" target="_blank" rel="noreferrer">
+              Review
+            </a>
           </button>
         </div>
       </div>
