@@ -1,0 +1,75 @@
+.cv_skills span {
+    width: 210px;
+    font-size: 34px;
+    line-height: 75px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+.cv_skills i {
+    color: white;
+    font-size: 34px;
+    line-height: 75px;
+    font-weight: 800;
+}
+
+.cv__skill-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cv__skill-item .cv__skill-content {
+    flex: 1;
+    max-width: 300px;
+    min-width: 250px;
+    min-height: 290px;
+    padding: 20px;
+    margin: 1rem;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 0.01px solid rgb(129, 129, 129);
+    border-radius: 10px;
+}
+
+.cv__skill-item .cv__skill-content .cv__skill-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv__skill-item .cv__skill-icon {
+    color: var(--color-skillS);
+    font-size: 3rem;
+}
+
+.cv__skill-content .cv__skill-name {
+    text-align: center;
+}
+
+.cv__skill-item .cv__skill-name h3 {
+    color: #b94646;
+    font-family: var(--font-family);
+    font-size: 25px;
+}
+
+.cv__skill-item .cv__skill-description {
+    color: var(--color-skillS);
+    font-family: var(--font-family);
+    font-size: 14px;
+}
+
+.cv__skill-item .cv__skill-content img {
+    width: 30%;
+}
+
+.cv__skill-item .cv__skill-content:hover {
+    border: 0.01px solid var(--color-text);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

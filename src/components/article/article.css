@@ -1,0 +1,112 @@
+.cv__project-container_article {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    background: var(--color-footer);
+    transition: top 2s
+}
+
+.cv__project-container_article:hover {
+    border: 1px solid rgb(21, 97, 92);
+    box-shadow: rgba(100, 98, 98, 0.25) 0px 25px 50px -12px;
+    top: -2px
+}
+
+.cv__project-container_article-image {
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+}
+
+.cv__project-container_article-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.cv__project-container_article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 1rem 1.5rem;
+    height: 100%;
+}
+
+.cv__project-container_article-content p {
+    font-family: var(--font-family);
+    font-size: 11.65px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 1.3rem;
+
+    color: #fff;
+}
+
+.cv__project-container_article-content small {
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 1.3rem;
+
+    color: rgb(168, 167, 167);
+}
+
+.cv__project-container_article-content h3 {
+    font-family: var(--font-family);
+    font-size: 25.11px;
+    font-weight: 800;
+    line-height: 30.30px;
+
+    color: #fff;
+    margin-bottom: 1.3rem;
+    cursor: pointer;
+}
+
+.cv__project-container_article-content p:last-child {
+    cursor: pointer;
+}
+
+
+.cv__project-container_article-content .cv__project-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cv__project-container_article-content .cv__project-button button {
+    flex: 0.6 1;
+    width: 100px;
+    /* min-height: 50px; */
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    /* line-height: 28px; */
+    /* background: transparent; */
+    background: rgb(255, 98, 62);
+    border: 1px solid rgb(255, 98, 62);
+    padding: 5px 16px;
+    margin-top: 1rem;
+    color: rgb(255 255 255);
+    cursor: pointer;
+    outline: none;
+    border-radius: 3px;
+
+}
+
+.cv__project-container_article-content .cv__project-button button:hover {
+    opacity: 0.8;
+}
+
+
+@media screen and (max-width: 550px) {
+    .cv__project-container_article-content h3 {
+        font-size: 18px;
+        line-height: 25p;
+    }
+}
