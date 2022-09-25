@@ -10,7 +10,7 @@ const Banner = () => (
     <div className="cv__banner-btn">
       <button type="button">
         <a
-          href="https://drive.google.com/drive/folders/1pcBj2nF35ecuUfEBRTuIP8Ccwg0kcr18?usp=sharing"
+          href="https://drive.google.com/drive/folders/1iycoHL7LUiuS-rkgG4LRErdXy4YgZ4WK?usp=sharing"
           target="_blank"
           rel="noreferrer"
         >
