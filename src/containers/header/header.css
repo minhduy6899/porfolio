@@ -1,7 +1,10 @@
 .cv__header {
     display: flex;
     flex-direction: row;
-    /* padding-top: 3rem; */
+}
+
+.section__padding.cv__header {
+    padding-top: 10rem !important;
 }
 
 .cv__header-content {
@@ -153,6 +156,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    .section__padding.cv__header {
+        padding-top: 10rem !important;
+    }
+
     .cv__header-content h1 {
         font-size: 48px;
         line-height: 60px;
@@ -179,6 +186,10 @@
 }
 
 @media screen and (max-width: 490px) {
+    .section__padding.cv__header {
+        padding-top: 10rem !important;
+    }
+
     .cv__header-content h1 {
         font-size: 36px;
         line-height: 48px;
