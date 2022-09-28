@@ -1,6 +1,7 @@
 .cv__header {
     display: flex;
     flex-direction: row;
+    /* padding-top: 3rem; */
 }
 
 .cv__header-content {

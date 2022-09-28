@@ -18,8 +18,15 @@
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
+  transform: rotate(180deg);
   opacity: 0.25;
 }
+
+.cv__contact-bg.cv__contact-bg-light {
+  opacity: 0.8;
+}
+
+.gradient__text.cv__contact-title {}
 
 .cv__contact-map {
   width: 50%;
@@ -47,16 +54,20 @@
   left: 0;
   padding: 0;
   margin: 0;
-  width: 399px;
-  height: 399px;
-  background-color: rgb(99 32 255);
+  width: 100%;
+  height: 100%;
+  background-color: rgb(97, 42, 224);
   background-position: center right;
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(9px);
-  -webkit-filter: blur(79px);
-  opacity: 0.25;
+  -webkit-filter: blur(100px);
+  opacity: 0.8;
   z-index: 1;
+}
+
+.cv__contact-info-light {
+  opacity: 0.8;
 }
 
 .cv__contact-info .cv__contact-info-content {
@@ -95,6 +106,11 @@
   border: 0.2px solid rgb(212, 212, 212);
 }
 
+.cv__contact-info input::placeholder,
+.cv__contact-info textarea::placeholder {
+  color: rgb(179, 179, 179)
+}
+
 .cv__contact-info button {
   flex: 0.6;
   width: 100%;
@@ -116,16 +132,6 @@
 .cv__contact-info button:hover {
   opacity: 0.8;
 }
-
-.cv__contact-name {}
-
-.cv__contact-email {}
-
-.cv__contact-phone {}
-
-.cv__contact-mess {}
-
-.cv__contact-btn {}
 
 @media screen and (max-width: 990px) {
   .cv__features {
@@ -176,5 +182,10 @@
     width: 100%;
     margin-bottom: 19px;
     z-index: 10;
+  }
+
+  .cv__contact-info .cv__contact-info-bg {
+    width: 100%;
+    height: 100%;
   }
 }

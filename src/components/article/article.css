@@ -82,15 +82,12 @@
 .cv__project-container_article-content .cv__project-button button {
     flex: 0.6 1;
     width: 100px;
-    /* min-height: 50px; */
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 13px;
-    /* line-height: 28px; */
-    /* background: transparent; */
     background: rgb(255, 98, 62);
     border: 1px solid rgb(255, 98, 62);
-    padding: 5px 16px;
+    padding: 5px 0px;
     margin-top: 1rem;
     color: rgb(255 255 255);
     cursor: pointer;
@@ -98,6 +95,16 @@
     border-radius: 3px;
 
 }
+
+.cv__project-button .cv__project-left button a {
+    padding: 6px;
+}
+
+.cv__project-button .cv__project-right button a {
+    padding: 6px 26px 6px 26px;
+}
+
+
 
 .cv__project-container_article-content .cv__project-button button:hover {
     opacity: 0.8;

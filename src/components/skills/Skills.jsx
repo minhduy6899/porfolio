@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './skills.css';
 import { db, html, js, mongodb, node, react } from './imports';
+import { ThemeContext } from '../../context/themeContext';
 
 const skills = [
   {
@@ -47,29 +48,39 @@ const skills = [
   },
 ];
 
-const Skills = () => (
-  <div className="cv_skills section__padding" id="skill">
-    <div>
-      <i className="fa-solid fa-code" />
-      &nbsp;&nbsp;
-      <span className="gradient__text">Skills</span>
+const Skills = () => {
+  const context = useContext(ThemeContext);
+  console.log('check', context);
+  return (
+    <div className="cv_skills section__padding" id="skill">
+      <div>
+        <i className="fa-solid fa-code" />
+        &nbsp;&nbsp;
+        <span className="gradient__text">Skills</span>
+      </div>
+      <div
+        className={
+          context.theme === 'dark'
+            ? 'cv__skill-item section__padding'
+            : 'cv__skill-item section__padding bg-skill'
+        }
+      >
+        {skills.map((item, index) => (
+          <div key={index} className="cv__skill-content">
+            <div className="cv__skill-img">
+              <img src={item.img} alt={item.title} />
+            </div>
+            <div className="cv__skill-name">
+              <h3>{item.title}</h3>
+            </div>
+            <div className="cv__skill-description">
+              <p>{item.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
-    <div className="cv__skill-item section__padding">
-      {skills.map((item, index) => (
-        <div key={index} className="cv__skill-content">
-          <div className="cv__skill-img">
-            <img src={item.img} alt={item.title} />
-          </div>
-          <div className="cv__skill-name">
-            <h3>{item.title}</h3>
-          </div>
-          <div className="cv__skill-description">
-            <p>{item.description}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-);
+  );
+};
 
 export default Skills;

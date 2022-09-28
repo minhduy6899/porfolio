@@ -1,3 +1,7 @@
+.bg-project {
+    background-color: rgb(51, 46, 46);
+}
+
 .cv__project {
     display: flex;
     flex-direction: column;

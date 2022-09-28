@@ -1,45 +1,29 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import logo from '../../assets/logogmd.png';
+import { ThemeContext } from '../../context/themeContext';
 import './navbar.css';
 
 export var theme = '';
 
-const Navbar = () => {
+const Navbar = ({ props }) => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const [isDark, setIsDark] = useState(
-    localStorage.getItem('theme') === 'dark'
-  );
-
-  useEffect(() => {
-    document
-      .getElementsByTagName('HTML')[0]
-      .setAttribute('data-theme', localStorage.getItem('theme'));
-  }, []);
-
-  const toggleThemeChange = () => {
-    if (isDark) {
-      localStorage.setItem('theme', 'light');
-      document
-        .getElementsByTagName('HTML')[0]
-        .setAttribute('data-theme', 'light');
-      setIsDark(true);
-    } else {
-      localStorage.setItem('theme', 'dark');
-      document
-        .getElementsByTagName('HTML')[0]
-        .setAttribute('data-theme', 'dark');
-      setIsDark(false);
-    }
-  };
-
+  const context = useContext(ThemeContext);
+  console.log(context);
   return (
     <div className="cv__navbar">
+      <div className="cv__navbar-bg"></div>
       <div className="cv__navbar-links">
         <div className="cv__navbar-links_logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="cv__navbar-links_container">
+        <div
+          className={
+            context.theme === 'dark'
+              ? 'cv__navbar-links_container'
+              : 'cv__navbar-links_container nav__text-dark'
+          }
+        >
           <p>
             <a href="#home">Home</a>
           </p>
@@ -58,11 +42,16 @@ const Navbar = () => {
         </div>
       </div>
       <div className="cv__navbar-sign disable">
-        <button type="button" className="btn-light">
-          <i className="fa-regular fa-lightbulb" />
-        </button>
-        <button type="button" className="btn-dark">
-          <i className="fa-solid fa-moon" />
+        <button
+          onClick={context.toggleTheme}
+          type="button"
+          className="btn-light"
+        >
+          {context.theme === 'dark' ? (
+            <i className="fa-regular fa-lightbulb" />
+          ) : (
+            <i className="fa-solid fa-moon" />
+          )}
         </button>
       </div>
       <div className="cv__navbar-menu">
@@ -99,8 +88,17 @@ const Navbar = () => {
               </p>
             </div>
             <div className="cv__navbar-sign cv__navbar-search">
-              <button type="button">Search</button>
-              <input type="text" placeholder="About me..." />
+              <button
+                onClick={context.toggleTheme}
+                type="button"
+                className="btn-light"
+              >
+                {context.theme === 'dark' ? (
+                  <i className="fa-regular fa-lightbulb" />
+                ) : (
+                  <i className="fa-solid fa-moon" />
+                )}
+              </button>
             </div>
           </div>
         )}
